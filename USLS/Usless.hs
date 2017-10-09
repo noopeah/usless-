@@ -29,7 +29,7 @@ instance Ord Signal where
     compare Zero Positive = LT
     compare Negative _ = LT
 instance Accessible Multiplexer where 
-    evaluate (Multiplexer s i) _
+    evaluate (Multiplexer s i) _ --FIXME: add the trustworthy callblocks check
         | s == Positive = positiveInput i
         | s == Zero     = zeroInput i
         | s == Negative = negativeInput i
@@ -39,4 +39,4 @@ instance Accessible MRAM where
         evaluate (Multiplexer sel inp) ecp where
             sel = dataPinInput cp
             inp = chip !! (address cp)
-            ecp = CallPack 0xeffe Zero -- an empty message analog
+            ecp = CallPack 0xeffe Zero -- an empty message analog. always refers to 0x0
