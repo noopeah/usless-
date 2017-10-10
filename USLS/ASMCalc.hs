@@ -18,4 +18,11 @@ memoryadd memory =
         argB = evaluate    memory  (CallPack         0x0      Zero)
         m0   = Multiplexer argA    (MultiplexerInput Positive Negative Zero)
         m1   = Multiplexer argA    (MultiplexerInput Zero     Positive Negative) 
- 
+
+
+
+{-
+        |N\ <- SELEECTOR 
+        |O |-> OTUPUT
+        |P/
+-}
