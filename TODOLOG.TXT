@@ -4,13 +4,13 @@
 ===================================================================================================
 -2-
 the most obvious solution is defining:
-    (>S>) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
+    (>^>) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
         it evaluates the first multiplexer(on the left side) and passes it into the right one as a Selector signal 
-    (>N>) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
+    (>->) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
         it evaluates the first multiplexer(on the left side) and passes it into the right one as a Negative input
-    (>O>) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
+    (>#>) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
         it evaluates the first multiplexer(on the left side) and passes it into the right one as a Zero input
-    (>P>) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
+    (>+>) operator takes 2 arguments: MULTIPLEXER 0 and MULTIPLEXER 1
         it evaluates the first multiplexer(on the left side) and passes it into the right one as a Positive input
     (>$>) operator takes 4 arguments
         it evaluates left 3 multiplexers as a tuple and passes their output as the MultilexerInput to the right one
