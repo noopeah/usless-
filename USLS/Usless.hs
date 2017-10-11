@@ -40,27 +40,3 @@ instance Accessible MRAM where
             sel = dataPinInput cp
             inp = chip !! (address cp)
             ecp = CallPack 0xeffe Zero -- an empty message analog. always refers to 0x0
-{-
-(>->) :: (Accessible m) => m -> m -> m
-(>->) leftm (Multiplexer sel input) = 
-    Multiplexer sel input{negativeInput = elm} where
-        elm = evaluate leftm ecp  --evaluated left multiplexer
-        ecp = CallPack 0xeffe Zero
-(>#>) :: (Accessible m) => m -> m -> m
-(>#>) leftm (Multiplexer sel input) = 
-    Multiplexer sel input{zeroInput = elm} where
-        elm = evaluate leftm ecp  --evaluated left multiplexer
-        ecp = CallPack 0xeffe Zero
-(>+>) :: (Accessible m) => m -> m -> m
-(>+>) leftm (Multiplexer sel input) = 
-    Multiplexer sel input{positiveInput = elm} where
-        elm = evaluate leftm ecp  --evaluated left multiplexer
-        ecp = CallPack 0xeffe Zero
-(>@>) :: (Accessible m) => [m, m, m] -> m -> m
-(>@>) [mn, mo, mp] (Multiplexer sel _) = 
-    Multiplexer sel (MultiplexerInput emn emo emp) where
-        emn = evaluate mn ecp
-        emo = evaluate mo ecp
-        emp = evaluate mp ecp
-        ecp = CallPack 0xeffe Zero
-        -}
