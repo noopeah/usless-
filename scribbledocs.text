@@ -1,0 +1,27 @@
+=MULTIPLEXER OPERATORS=
+\0\ >-> :: Mult -> Mult -> Mult : this one takes the left multiplexer and casts 
+                                  it`s evaluated version(Signal) as a negative 
+                                  input to a right one.
+\1\ >+> :: Mult -> Mult -> Mult : this one takes the left multiplexer and casts 
+                                  it`s evaluated version(Signal) as a positive 
+                                  input to a right one.
+\2\ >#> :: Mult -> Mult -> Mult : this one takes the left multiplexer and casts 
+                                  it`s evaluated version(Signal) as a zero 
+                                  input to a right one.
+\3\ >^> :: Mult -> Mult -> Mult : this one takes the left multiplexer and casts 
+                                  it`s evaluated version(Signal) as a selector 
+                                  input to a right one.
+\4\ <^< :: Mult -> Mult -> Mult : this one takes the right multiplexer and casts 
+                                  it`s evaluated version(Signal) as a selector 
+                                  input to a left one.
+=SIGNAL - MULTIPLEXER OPERATORS=
+\0\ >%-> :: Signal -> Mult -> Mult : this one takes the signal and casts 
+                                     it as a negative input to a multiplexer.
+\1\ >%+> :: Signal -> Mult -> Mult : this one takes the signal and casts 
+                                     it as a positive input to a multiplexer. 
+\2\ >%#> :: Signal -> Mult -> Mult : this one takes the signal and casts 
+                                     it as a zero input to a multiplexer.                                                    
+\3\ >%^> :: Signal -> Mult -> Mult : this one takes the signal and casts 
+                                     it as a selector input to a multiplexer.
+\4\ <%^< :: Mult -> Signal -> Mult : this one takes the signal and casts 
+                                     it as a selector input to a multiplexer
