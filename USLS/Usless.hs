@@ -1,10 +1,9 @@
 {-#LANGUAGE TypeSynonymInstances#-}
 {-#LANGUAGE FlexibleInstances#-}
-module USLS.Usless where 
+module USLS.Usless where
 import Data.Int (Int8, Int32)
 import Data.Maybe
 import Data.List
---import Data.Record.Field ((=:), (.#))
 
 data Signal = Positive | Zero | Negative 
     deriving(Show, Eq)
@@ -40,3 +39,5 @@ instance Accessible MRAM where
             sel = dataPinInput cp
             inp = chip !! (address cp)
             ecp = CallPack 0xeffe Zero -- an empty message analog. always refers to 0x0
+
+nullMultiplexer = Multiplexer Zero (MultiplexerInput Zero Zero Zero)
