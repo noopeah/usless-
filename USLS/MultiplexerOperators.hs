@@ -22,4 +22,8 @@ import USLS.Usless
         emo = evaluate mo ecp
         emp = evaluate mp ecp
         ecp = CallPack 0xeffe Zero
-        
+(>^>) :: Signal -> Multiplexer -> Multiplexer
+(>^>) sel (Multiplexer _ input) = 
+    Multiplexer sel input        
+(<^<) :: Multiplexer -> Signal -> Multiplexer
+(<^<) mult sel = sel >^> mult
