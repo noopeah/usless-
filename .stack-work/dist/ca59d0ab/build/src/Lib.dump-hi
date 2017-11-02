@@ -1,0 +1,96 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-02 15:24:47.8584482 UTC
+
+interface usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm:Lib 8002
+  interface hash: 79e282494981715a606217e276b9fb94
+  ABI hash: 427f1929bd0facb4caff6aea125ac9ff
+  export-list hash: e1b1c43112213d7b2383970747362f2b
+  orphan hash: dd1da3cf03b0f6ed42b39b44647fd0ea
+  flag hash: 380855b5a8e8e17c4cf70fc5427245af
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.conv
+module dependencies: TLDL.ExampleOfTLDLSession TLDL.Interpreter
+                     USLS.MOperators USLS.Usless
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  TLDL.ExampleOfTLDLSession f8f58df7227446e455184a5c4041c710
+  exports: 3a406f4821307e32f00d41534e1de11b
+  session 79bc703457a71955ab0205717b135c61
+import  -/  TLDL.Interpreter c12b2cdddcbc9e61de6b2467dea4a2fc
+  exports: f33ef6a9c9857498d327f8f9f1183a60
+import  -/  USLS.MOperators 23711402a9595693228568796da9ae04
+  exports: a2f24ef812e84bc4a9bae42293d6833f
+import  -/  USLS.Usless 6ffb6a6cf460d2f9fa7834bbf321e167
+  exports: 1c78333baa4d79823057a352f17c3239
+4080a72bbbf08158fcb565f79dfe6397
+  $s$fShow[]_$s$fShow[]_$cshow ::
+    [USLS.Usless.MultiplexerInput] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [USLS.Usless.MultiplexerInput]) ->
+                 USLS.Usless.$fShowMultiplexerInput_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+57cddb7681b3a3b94a4da7f3e5f744f9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+06d40692404556fdee283a0d75e08e44
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+ff476b2885f86a34a184e025555f3f6b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm"#) -}
+2a4998ed2c0aed0bcb73ad22cad05877
+  conv :: GHC.Types.IO (GHC.Types.IO ())
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.conv1 `cast` (Sym (GHC.Types.N:IO[0] <GHC.Types.IO ()>_R)) -}
+6360c7d402e4459674a1ca56682a6349
+  conv1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.IO () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case TLDL.ExampleOfTLDLSession.session1
+                        eta of ds { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     GHC.IO.Handle.Text.hPutStr2
+                       GHC.IO.Handle.FD.stdout
+                       (Lib.$s$fShow[]_$s$fShow[]_$cshow ipv1)
+                       GHC.Types.True
+                       eta1)
+                      `cast`
+                    (Sym (GHC.Types.N:IO[0] <()>_R)) #) }) -}
+"SPEC/Lib $fShow[]_$cshow @ MultiplexerInput" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                           USLS.Usless.MultiplexerInput)
+  GHC.Show.$fShow[]_$cshow @ USLS.Usless.MultiplexerInput $dShow
+  = Lib.$s$fShow[]_$s$fShow[]_$cshow
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

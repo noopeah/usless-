@@ -1,0 +1,293 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-02 15:23:26.1198076 UTC
+
+interface usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm:USLS.MOperators 8002
+  interface hash: fdb1392288e3f2d5a0a3e2d7fb19f381
+  ABI hash: 23711402a9595693228568796da9ae04
+  export-list hash: a2f24ef812e84bc4a9bae42293d6833f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6a40fa824d644c71e120447d602c978
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  USLS.MOperators.allMultAsAll
+  USLS.MOperators.allSigAsAll
+  USLS.MOperators.leftMultAsNeg
+  USLS.MOperators.leftMultAsPos
+  USLS.MOperators.leftMultAsSel
+  USLS.MOperators.leftMultAsZero
+  USLS.MOperators.leftSigAsNeg
+  USLS.MOperators.leftSigAsPos
+  USLS.MOperators.leftSigAsSel
+  USLS.MOperators.leftSigAsZero
+module dependencies: USLS.Usless
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  USLS.Usless 6ffb6a6cf460d2f9fa7834bbf321e167
+  exports: 1c78333baa4d79823057a352f17c3239
+  CallPack 89b0e48d3d439a94ed43a24c0aa744f8
+  Multiplexer 7472872bc392e9bdea10bf11e31ada99
+  Multiplexer 1b5980a9758cd04deb6762f8b161bee0
+  MultiplexerInput aaec5258262eeca315161789dd59336e
+  Signal dc9f1b76e22bf10131d08d969ae66af3
+  Zero 60e1a5bac99bef19c660d3260e832c83
+  evaluate 3275c97610e1e4fd64055c540a4d1126
+  negativeInput 88a89cc03f63b03197f8f47d9656ded2
+  positiveInput c17262a292cd4c07208fd862d3d8385b
+  zeroInput 0e0c9e037fcf3dae6ab6392fd5c79bec
+ddeff46c13fc0edec97037303fc873d2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   USLS.MOperators.$trModule2
+                   USLS.MOperators.$trModule1) -}
+7cc09b4182262e17ec5bf7c71a613fb8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "USLS.MOperators"#) -}
+de9cc221329825621fe828c3dbcd35a9
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm"#) -}
+aab9d501edfb4973ac237c2abfe179e8
+  $wallMultAsAll ::
+    USLS.Usless.Multiplexer
+    -> USLS.Usless.Multiplexer
+    -> USLS.Usless.Multiplexer
+    -> USLS.Usless.Signal
+    -> (# USLS.Usless.Signal, USLS.Usless.MultiplexerInput #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*U,1*U(1*U,1*U,1*U))><L,1*U(1*U,1*U(1*U,1*U,1*U))><L,1*U(1*U,1*U(1*U,1*U,1*U))><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: USLS.Usless.Multiplexer)
+                   (ww1 :: USLS.Usless.Multiplexer)
+                   (ww2 :: USLS.Usless.Multiplexer)
+                   (ww3 :: USLS.Usless.Signal) ->
+                 (# ww3,
+                    USLS.Usless.MultiplexerInput
+                      (case ww of wild { USLS.Usless.Multiplexer s i ->
+                       case s of wild1 {
+                         USLS.Usless.Positive
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds4 }
+                         USLS.Usless.Zero
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds3 }
+                         USLS.Usless.Negative
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds2 } } })
+                      (case ww1 of wild { USLS.Usless.Multiplexer s i ->
+                       case s of wild1 {
+                         USLS.Usless.Positive
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds4 }
+                         USLS.Usless.Zero
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds3 }
+                         USLS.Usless.Negative
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds2 } } })
+                      (case ww2 of wild { USLS.Usless.Multiplexer s i ->
+                       case s of wild1 {
+                         USLS.Usless.Positive
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds4 }
+                         USLS.Usless.Zero
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds3 }
+                         USLS.Usless.Negative
+                         -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                            ds2 } } }) #)) -}
+6991081e9853500e02f27230e3978cae
+  allMultAsAll ::
+    (USLS.Usless.Multiplexer, USLS.Usless.Multiplexer,
+     USLS.Usless.Multiplexer)
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(1*U,1*U(1*U,1*U,1*U)),1*U(1*U,1*U(1*U,1*U,1*U)),1*U(1*U,1*U(1*U,1*U,1*U)))><S,1*U(U,A)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (USLS.Usless.Multiplexer, USLS.Usless.Multiplexer,
+                          USLS.Usless.Multiplexer))
+                   (w1 :: USLS.Usless.Multiplexer) ->
+                 case w of ww { (,,) ww1 ww2 ww3 ->
+                 case w1 of ww4 { USLS.Usless.Multiplexer ww5 ww6 ->
+                 case USLS.MOperators.$wallMultAsAll
+                        ww1
+                        ww2
+                        ww3
+                        ww5 of ww7 { (#,#) ww8 ww9 ->
+                 USLS.Usless.Multiplexer ww8 ww9 } } }) -}
+e59b1935f98a4c5b85fa56b597871752
+  allSigAsAll ::
+    (USLS.Usless.Signal, USLS.Usless.Signal, USLS.Usless.Signal)
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U,U,U)><S,1*U(U,A)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: (USLS.Usless.Signal, USLS.Usless.Signal,
+                           USLS.Usless.Signal))
+                   (ds1 :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { (,,) n o p ->
+                 case ds1 of wild1 { USLS.Usless.Multiplexer sel ds2 ->
+                 USLS.Usless.Multiplexer
+                   sel
+                   (USLS.Usless.MultiplexerInput n o p) } }) -}
+29128fb0ac4be16b25f352de52040f7a
+  leftMultAsNeg ::
+    USLS.Usless.Multiplexer
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(1*U,1*U(1*U,1*U,1*U))><S,1*U(U,1*U(A,U,U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: USLS.Usless.Multiplexer)
+                   (w1 :: USLS.Usless.Multiplexer) ->
+                 case w1 of ww { USLS.Usless.Multiplexer ww1 ww2 ->
+                 USLS.Usless.Multiplexer
+                   ww1
+                   (case ww2 of wild { USLS.Usless.MultiplexerInput ds ds1 ds2 ->
+                    USLS.Usless.MultiplexerInput
+                      (case w of wild1 { USLS.Usless.Multiplexer s i ->
+                       case s of wild2 {
+                         USLS.Usless.Positive
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds5 }
+                         USLS.Usless.Zero
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds4 }
+                         USLS.Usless.Negative
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds3 } } })
+                      ds1
+                      ds2 }) }) -}
+66da18a6fb26214794278e4c21e26c2d
+  leftMultAsPos ::
+    USLS.Usless.Multiplexer
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(1*U,1*U(1*U,1*U,1*U))><S,1*U(U,1*U(U,U,A))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: USLS.Usless.Multiplexer)
+                   (w1 :: USLS.Usless.Multiplexer) ->
+                 case w1 of ww { USLS.Usless.Multiplexer ww1 ww2 ->
+                 USLS.Usless.Multiplexer
+                   ww1
+                   (case ww2 of wild { USLS.Usless.MultiplexerInput ds ds1 ds2 ->
+                    USLS.Usless.MultiplexerInput
+                      ds
+                      ds1
+                      (case w of wild1 { USLS.Usless.Multiplexer s i ->
+                       case s of wild2 {
+                         USLS.Usless.Positive
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds5 }
+                         USLS.Usless.Zero
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds4 }
+                         USLS.Usless.Negative
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds3 } } }) }) }) -}
+e2f7264ddffc37cc0356fad83cf85d89
+  leftMultAsSel ::
+    USLS.Usless.Signal
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(A,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (sel :: USLS.Usless.Signal) (ds :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { USLS.Usless.Multiplexer ds1 input ->
+                 USLS.Usless.Multiplexer sel input }) -}
+c2a32b111a9f6f33cd5660c4deb9f31f
+  leftMultAsZero ::
+    USLS.Usless.Multiplexer
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(1*U,1*U(1*U,1*U,1*U))><S,1*U(U,1*U(U,A,U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: USLS.Usless.Multiplexer)
+                   (w1 :: USLS.Usless.Multiplexer) ->
+                 case w1 of ww { USLS.Usless.Multiplexer ww1 ww2 ->
+                 USLS.Usless.Multiplexer
+                   ww1
+                   (case ww2 of wild { USLS.Usless.MultiplexerInput ds ds1 ds2 ->
+                    USLS.Usless.MultiplexerInput
+                      ds
+                      (case w of wild1 { USLS.Usless.Multiplexer s i ->
+                       case s of wild2 {
+                         USLS.Usless.Positive
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds5 }
+                         USLS.Usless.Zero
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds4 }
+                         USLS.Usless.Negative
+                         -> case i of wild3 { USLS.Usless.MultiplexerInput ds3 ds4 ds5 ->
+                            ds3 } } })
+                      ds2 }) }) -}
+a66c55ce66daae539fb2085966b204ee
+  leftSigAsNeg ::
+    USLS.Usless.Signal
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S(LS),1*U(U,1*U(A,U,U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (sig :: USLS.Usless.Signal) (ds :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { USLS.Usless.Multiplexer sel ds1 ->
+                 case ds1 of wild1 { USLS.Usless.MultiplexerInput n o p ->
+                 USLS.Usless.Multiplexer
+                   sel
+                   (USLS.Usless.MultiplexerInput sig o p) } }) -}
+da04c6219bb45aaa011f5a1f634e3c9b
+  leftSigAsPos ::
+    USLS.Usless.Signal
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S(LS),1*U(U,1*U(U,U,A))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (sig :: USLS.Usless.Signal) (ds :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { USLS.Usless.Multiplexer sel ds1 ->
+                 case ds1 of wild1 { USLS.Usless.MultiplexerInput n o p ->
+                 USLS.Usless.Multiplexer
+                   sel
+                   (USLS.Usless.MultiplexerInput n o sig) } }) -}
+71e3d52d626f1cee0cd7f914174f6368
+  leftSigAsSel ::
+    USLS.Usless.Signal
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(A,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (sig :: USLS.Usless.Signal) (ds :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { USLS.Usless.Multiplexer ds1 inp ->
+                 USLS.Usless.Multiplexer sig inp }) -}
+6671a56578a8425da7d5ad783ae7fc25
+  leftSigAsZero ::
+    USLS.Usless.Signal
+    -> USLS.Usless.Multiplexer -> USLS.Usless.Multiplexer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S(LS),1*U(U,1*U(U,A,U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (sig :: USLS.Usless.Signal) (ds :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { USLS.Usless.Multiplexer sel ds1 ->
+                 case ds1 of wild1 { USLS.Usless.MultiplexerInput n o p ->
+                 USLS.Usless.Multiplexer
+                   sel
+                   (USLS.Usless.MultiplexerInput n sig p) } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

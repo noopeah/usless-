@@ -5,7 +5,6 @@ import USLS.Usless
 import USLS.MOperators 
 import Data.List.Split (splitOn)
 import System.IO
-import System.Random
 
 -- fist thing to implement is the `random access memory` functional
 -- these are: peek(addr)

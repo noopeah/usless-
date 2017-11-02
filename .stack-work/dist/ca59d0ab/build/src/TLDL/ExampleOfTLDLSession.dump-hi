@@ -1,0 +1,192 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-02 15:23:26.59226 UTC
+
+interface usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm:TLDL.ExampleOfTLDLSession 8002
+  interface hash: 8438e6933661d984a21d6955bc071f96
+  ABI hash: f8f58df7227446e455184a5c4041c710
+  export-list hash: 3a406f4821307e32f00d41534e1de11b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 2d02f76485a01b51be1a9bed2ed898f4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TLDL.ExampleOfTLDLSession.session
+module dependencies: TLDL.Interpreter USLS.MOperators USLS.Usless
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  TLDL.Interpreter c12b2cdddcbc9e61de6b2467dea4a2fc
+  exports: f33ef6a9c9857498d327f8f9f1183a60
+  loadState 028e2e7a134f0093e16db2daa5049ef3
+  peek 2b612380ffafe7424288d5ca629d64d6
+  poke 6917ff00fbf5df2db9e08712fde8777a
+  saveCurrentState 76ff04b21dfc18fa09ec15112f7c3b75
+import  -/  USLS.Usless 6ffb6a6cf460d2f9fa7834bbf321e167
+  exports: 1c78333baa4d79823057a352f17c3239
+  MRAM d7204a6b7f62b1ba2fad52531a1b39ca
+  MultiplexerInput aaec5258262eeca315161789dd59336e
+  Negative 4a017c0b0c6b5dc7f8169e416290b92c
+  Positive 6ab821ec23b1170f419f8b06d354ca9d
+  Zero 60e1a5bac99bef19c660d3260e832c83
+c4dff270e9b8afbc42f64128983ac954
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   TLDL.ExampleOfTLDLSession.$trModule2
+                   TLDL.ExampleOfTLDLSession.$trModule1) -}
+cf15fb3143744b54b46348a2811387ac
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TLDL.ExampleOfTLDLSession"#) -}
+c289f44e3947d9defc0f1b296a6a2de2
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm"#) -}
+79bc703457a71955ab0205717b135c61
+  session :: GHC.Types.IO USLS.Usless.MRAM
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                TLDL.ExampleOfTLDLSession.session1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <USLS.Usless.MRAM>_R)) -}
+f8694ea5e89f5d196a70aa4460e377f7
+  session1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, USLS.Usless.MRAM #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        TLDL.ExampleOfTLDLSession.session12
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        TLDL.ExampleOfTLDLSession.session11
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case TLDL.ExampleOfTLDLSession.session10
+                        TLDL.ExampleOfTLDLSession.session_mem
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.FD.openFile1
+                        TLDL.ExampleOfTLDLSession.session2
+                        GHC.IO.IOMode.ReadMode
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv7
+                        ipv6 of ds { (#,#) ipv8 ipv9 ->
+                 (# ipv8, TLDL.Interpreter.loadState ipv9 #) } } } } }) -}
+b982b2fd8ece3396be8eca1ccb0c3256
+  session10 ::
+    [USLS.Usless.MultiplexerInput]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+6a79c56007742c5d77d90a475e100c9f
+  session11 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.showList__
+                   @ USLS.Usless.MultiplexerInput
+                   USLS.Usless.$fShowMultiplexerInput1
+                   TLDL.ExampleOfTLDLSession.session_mem
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3f958e46df83d41845b22a1dd66279cf
+  session12 :: GHC.Base.String
+  {- Unfolding: (case GHC.List.$w!!
+                        @ USLS.Usless.MultiplexerInput
+                        TLDL.ExampleOfTLDLSession.session_smem
+                        2# of ww2 { USLS.Usless.MultiplexerInput ww3 ww4 ww5 ->
+                 USLS.Usless.$w$cshowsPrec1
+                   0#
+                   ww3
+                   ww4
+                   ww5
+                   (GHC.Types.[] @ GHC.Types.Char) }) -}
+9613bf2640978dd2b89a08637599b40f
+  session2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "dump.!"#) -}
+44ad91dac5b38a59df68659a8108322b
+  session3 :: [USLS.Usless.MultiplexerInput]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ USLS.Usless.MultiplexerInput
+                   TLDL.ExampleOfTLDLSession.session8
+                   TLDL.ExampleOfTLDLSession.session4) -}
+9f0f865718ccf90f6b2ca61dffb82488
+  session4 :: [USLS.Usless.MultiplexerInput]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ USLS.Usless.MultiplexerInput
+                   TLDL.ExampleOfTLDLSession.session7
+                   TLDL.ExampleOfTLDLSession.session5) -}
+42840d64097df58df746152540489cda
+  session5 :: [USLS.Usless.MultiplexerInput]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ USLS.Usless.MultiplexerInput
+                   TLDL.ExampleOfTLDLSession.session6
+                   (GHC.Types.[] @ USLS.Usless.MultiplexerInput)) -}
+a285022fc900e31a7f2d8921b9626427
+  session6 :: USLS.Usless.MultiplexerInput
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (USLS.Usless.MultiplexerInput
+                   USLS.Usless.Zero
+                   USLS.Usless.Zero
+                   USLS.Usless.Positive) -}
+dc074e408656da61c9181fe0c856373c
+  session7 :: USLS.Usless.MultiplexerInput
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (USLS.Usless.MultiplexerInput
+                   USLS.Usless.Zero
+                   USLS.Usless.Zero
+                   USLS.Usless.Zero) -}
+6e39cc1a6487cd07dad5f7e7b071e1ec
+  session8 :: USLS.Usless.MultiplexerInput
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (USLS.Usless.MultiplexerInput
+                   USLS.Usless.Positive
+                   USLS.Usless.Zero
+                   USLS.Usless.Negative) -}
+887239eacbeeece1f5e8e17b1907d2cc
+  session9 :: USLS.Usless.MultiplexerInput
+  {- Unfolding: (case GHC.List.$w!!
+                        @ USLS.Usless.MultiplexerInput
+                        TLDL.ExampleOfTLDLSession.session_smem
+                        2# of wild1 { USLS.Usless.MultiplexerInput ds ds1 ds2 ->
+                 USLS.Usless.MultiplexerInput ds USLS.Usless.Positive ds2 }) -}
+4d601d299854a4e808af4fa5d497e97e
+  session_mem :: USLS.Usless.MRAM
+  {- Unfolding: (case TLDL.Interpreter.$wreplaceNth
+                        @ USLS.Usless.MultiplexerInput
+                        2#
+                        TLDL.ExampleOfTLDLSession.session9
+                        TLDL.ExampleOfTLDLSession.session_smem of ww1 { (#,#) ww2 ww3 ->
+                 GHC.Types.: @ USLS.Usless.MultiplexerInput ww2 ww3 }) -}
+c0add2b8b14d65bbe36f39ca49954579
+  session_smem :: [USLS.Usless.MultiplexerInput]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ USLS.Usless.MultiplexerInput
+                   TLDL.ExampleOfTLDLSession.session7
+                   TLDL.ExampleOfTLDLSession.session3) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

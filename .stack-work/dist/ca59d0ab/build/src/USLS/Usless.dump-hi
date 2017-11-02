@@ -1,0 +1,1223 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-02 15:23:25.969061 UTC
+
+interface usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm:USLS.Usless 8002
+  interface hash: 13813ec0b6a44aad4f5ebc0f632c81c3
+  ABI hash: 6ffb6a6cf460d2f9fa7834bbf321e167
+  export-list hash: 1c78333baa4d79823057a352f17c3239
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b272946effd02fbaacd4bd808f6edc10
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  USLS.Usless.nullMultiplexer
+  USLS.Usless.Accessible{USLS.Usless.evaluate}
+  USLS.Usless.CallPack{USLS.Usless.CallPack address dataPinInput}
+  USLS.Usless.MRAM
+  USLS.Usless.Multiplexer{USLS.Usless.Multiplexer input selector}
+  USLS.Usless.MultiplexerInput{USLS.Usless.MultiplexerInput negativeInput positiveInput zeroInput}
+  USLS.Usless.Signal{USLS.Usless.Negative USLS.Usless.Positive USLS.Usless.Zero}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Int 20408ba2128e93c780052f9f38bb0490
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Read 823163de9fa29f31f251382abc171b2b
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+f73450bf6e27bdb4fea1d19d224167f3
+  $fAccessibleMultiplexer ::
+    USLS.Usless.Accessible USLS.Usless.Multiplexer
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS),1*U(1*U,1*U(1*U,1*U,1*U))><L,A>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                USLS.Usless.$fAccessibleMultiplexer_$cevaluate
+                  `cast`
+                (Sym (USLS.Usless.N:Accessible[0] <USLS.Usless.Multiplexer>_N)) -}
+f9294ed5f07348167d91af3b62940a78
+  $fAccessibleMultiplexer_$cevaluate ::
+    USLS.Usless.Multiplexer
+    -> USLS.Usless.CallPack -> USLS.Usless.Signal
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS),1*U(1*U,1*U(1*U,1*U,1*U))><L,A>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: USLS.Usless.Multiplexer) (ds1 :: USLS.Usless.CallPack) ->
+                 case ds of wild { USLS.Usless.Multiplexer s i ->
+                 case s of wild1 {
+                   USLS.Usless.Positive
+                   -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                      ds4 }
+                   USLS.Usless.Zero
+                   -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                      ds3 }
+                   USLS.Usless.Negative
+                   -> case i of wild2 { USLS.Usless.MultiplexerInput ds2 ds3 ds4 ->
+                      ds2 } } }) -}
+f73450bf6e27bdb4fea1d19d224167f3
+  $fAccessible[] :: USLS.Usless.Accessible USLS.Usless.MRAM
+  DFunId
+  {- Arity: 2, Strictness: <S,1*U><S(S(S)S),1*U(1*U(U),1*U)>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                USLS.Usless.$fAccessible[]_$cevaluate
+                  `cast`
+                (Sym (USLS.Usless.N:Accessible[0] <USLS.Usless.MRAM>_N)) -}
+a2a86625f9f7532b6f7244e194a46d18
+  $fAccessible[]_$cevaluate ::
+    USLS.Usless.MRAM -> USLS.Usless.CallPack -> USLS.Usless.Signal
+  {- Arity: 2, Strictness: <S,1*U><S(S(S)S),1*U(1*U(U),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: USLS.Usless.MRAM) (w1 :: USLS.Usless.CallPack) ->
+                 case w1 of ww { USLS.Usless.CallPack ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 USLS.Usless.$w$cevaluate w ww4 ww2 } }) -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fEqMultiplexer :: GHC.Classes.Eq USLS.Usless.Multiplexer
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.Multiplexer
+                  USLS.Usless.$fEqMultiplexer_$c==
+                  USLS.Usless.$fEqMultiplexer_$c/= -}
+a7e5add60066491a06b506109692147f
+  $fEqMultiplexerInput :: GHC.Classes.Eq USLS.Usless.MultiplexerInput
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.MultiplexerInput
+                  USLS.Usless.$fEqMultiplexer_$c==1
+                  USLS.Usless.$fEqMultiplexerInput_$c/= -}
+a7e5add60066491a06b506109692147f
+  $fEqMultiplexerInput_$c/= ::
+    USLS.Usless.MultiplexerInput
+    -> USLS.Usless.MultiplexerInput -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U,1*U,1*U)><S(SLL),1*U(1*U,1*U,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: USLS.Usless.MultiplexerInput)
+                   (b :: USLS.Usless.MultiplexerInput) ->
+                 case USLS.Usless.$fEqMultiplexer_$c==1 a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fEqMultiplexer_$c/= ::
+    USLS.Usless.Multiplexer
+    -> USLS.Usless.Multiplexer -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U(1*U,1*U,1*U))><S(SL),1*U(1*U,1*U(1*U,1*U,1*U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: USLS.Usless.Multiplexer) (b :: USLS.Usless.Multiplexer) ->
+                 case USLS.Usless.$fEqMultiplexer_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fEqMultiplexer_$c== ::
+    USLS.Usless.Multiplexer
+    -> USLS.Usless.Multiplexer -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U(1*U,1*U,1*U))><S(SL),1*U(1*U,1*U(1*U,1*U,1*U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: USLS.Usless.Multiplexer)
+                   (w1 :: USLS.Usless.Multiplexer) ->
+                 case w of ww { USLS.Usless.Multiplexer ww1 ww2 ->
+                 case w1 of ww3 { USLS.Usless.Multiplexer ww4 ww5 ->
+                 USLS.Usless.$w$c== ww1 ww2 ww4 ww5 } }) -}
+a7e5add60066491a06b506109692147f
+  $fEqMultiplexer_$c==1 ::
+    USLS.Usless.MultiplexerInput
+    -> USLS.Usless.MultiplexerInput -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U,1*U,1*U)><S(SLL),1*U(1*U,1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: USLS.Usless.MultiplexerInput)
+                   (w1 :: USLS.Usless.MultiplexerInput) ->
+                 case w of ww { USLS.Usless.MultiplexerInput ww1 ww2 ww3 ->
+                 case w1 of ww4 { USLS.Usless.MultiplexerInput ww5 ww6 ww7 ->
+                 USLS.Usless.$w$c==1 ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fEqMultiplexer_$c==2 ::
+    USLS.Usless.Signal -> USLS.Usless.Signal -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: USLS.Usless.Signal) (ds1 :: USLS.Usless.Signal) ->
+                 case ds of wild {
+                   USLS.Usless.Positive
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False USLS.Usless.Positive -> GHC.Types.True }
+                   USLS.Usless.Zero
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False USLS.Usless.Zero -> GHC.Types.True }
+                   USLS.Usless.Negative
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        USLS.Usless.Negative -> GHC.Types.True } }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fEqSignal :: GHC.Classes.Eq USLS.Usless.Signal
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.Signal
+                  USLS.Usless.$fEqMultiplexer_$c==2
+                  USLS.Usless.$fEqSignal_$c/= -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fEqSignal_$c/= ::
+    USLS.Usless.Signal -> USLS.Usless.Signal -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: USLS.Usless.Signal) (b :: USLS.Usless.Signal) ->
+                 case a of wild {
+                   USLS.Usless.Positive
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True USLS.Usless.Positive -> GHC.Types.False }
+                   USLS.Usless.Zero
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True USLS.Usless.Zero -> GHC.Types.False }
+                   USLS.Usless.Negative
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        USLS.Usless.Negative -> GHC.Types.False } }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fOrdSignal :: GHC.Classes.Ord USLS.Usless.Signal
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.Signal
+                  USLS.Usless.$fEqSignal
+                  USLS.Usless.$fOrdSignal_$ccompare
+                  USLS.Usless.$fOrdSignal_$c<
+                  USLS.Usless.$fOrdSignal_$c<
+                  USLS.Usless.$fOrdSignal_$c>=
+                  USLS.Usless.$fOrdSignal_$c>=
+                  USLS.Usless.$fOrdSignal_$cmax
+                  USLS.Usless.$fOrdSignal_$cmin -}
+a41df6e9e22d599fc87d2d92b65bd323
+  $fOrdSignal1 :: GHC.Types.Ordering
+  {- Strictness: x -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fOrdSignal_$c< ::
+    USLS.Usless.Signal -> USLS.Usless.Signal -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: USLS.Usless.Signal) (y :: USLS.Usless.Signal) ->
+                 case x of wild {
+                   USLS.Usless.Positive -> GHC.Types.False
+                   USLS.Usless.Zero
+                   -> case y of wild1 {
+                        USLS.Usless.Positive -> GHC.Types.True
+                        USLS.Usless.Zero
+                        -> case USLS.Usless.$fOrdSignal1 ret_ty GHC.Types.Bool of {}
+                        USLS.Usless.Negative -> GHC.Types.False }
+                   USLS.Usless.Negative -> GHC.Types.True }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fOrdSignal_$c>= ::
+    USLS.Usless.Signal -> USLS.Usless.Signal -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: USLS.Usless.Signal) (y :: USLS.Usless.Signal) ->
+                 case x of wild {
+                   USLS.Usless.Positive -> GHC.Types.True
+                   USLS.Usless.Zero
+                   -> case y of wild1 {
+                        USLS.Usless.Positive -> GHC.Types.False
+                        USLS.Usless.Zero
+                        -> case USLS.Usless.$fOrdSignal1 ret_ty GHC.Types.Bool of {}
+                        USLS.Usless.Negative -> GHC.Types.True }
+                   USLS.Usless.Negative -> GHC.Types.False }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fOrdSignal_$ccompare ::
+    USLS.Usless.Signal -> USLS.Usless.Signal -> GHC.Types.Ordering
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: USLS.Usless.Signal) (ds1 :: USLS.Usless.Signal) ->
+                 case ds of wild {
+                   USLS.Usless.Positive -> GHC.Types.GT
+                   USLS.Usless.Zero
+                   -> case ds1 of wild1 {
+                        USLS.Usless.Positive -> GHC.Types.LT
+                        USLS.Usless.Zero -> USLS.Usless.$fOrdSignal1
+                        USLS.Usless.Negative -> GHC.Types.GT }
+                   USLS.Usless.Negative -> GHC.Types.LT }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fOrdSignal_$cmax ::
+    USLS.Usless.Signal -> USLS.Usless.Signal -> USLS.Usless.Signal
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: USLS.Usless.Signal) (y :: USLS.Usless.Signal) ->
+                 case x of wild {
+                   USLS.Usless.Positive -> USLS.Usless.Positive
+                   USLS.Usless.Zero
+                   -> case y of wild1 {
+                        USLS.Usless.Positive -> USLS.Usless.Positive
+                        USLS.Usless.Zero
+                        -> case USLS.Usless.$fOrdSignal1 ret_ty USLS.Usless.Signal of {}
+                        USLS.Usless.Negative -> USLS.Usless.Zero }
+                   USLS.Usless.Negative -> y }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fOrdSignal_$cmin ::
+    USLS.Usless.Signal -> USLS.Usless.Signal -> USLS.Usless.Signal
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: USLS.Usless.Signal) (y :: USLS.Usless.Signal) ->
+                 case x of wild {
+                   USLS.Usless.Positive -> y
+                   USLS.Usless.Zero
+                   -> case y of wild1 {
+                        USLS.Usless.Positive -> USLS.Usless.Zero
+                        USLS.Usless.Zero
+                        -> case USLS.Usless.$fOrdSignal1 ret_ty USLS.Usless.Signal of {}
+                        USLS.Usless.Negative -> USLS.Usless.Negative }
+                   USLS.Usless.Negative -> USLS.Usless.Negative }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal :: GHC.Read.Read USLS.Usless.Signal
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.Signal
+                  USLS.Usless.$fReadSignal_$creadsPrec
+                  USLS.Usless.$fReadSignal_$creadList
+                  USLS.Usless.$fReadSignal_$creadPrec
+                  USLS.Usless.$fReadSignal_$creadListPrec -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       ([USLS.Usless.Signal] -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta1 :: [USLS.Usless.Signal]
+                            -> Text.ParserCombinators.ReadP.P b) ->
+                 GHC.Read.list1
+                   @ USLS.Usless.Signal
+                   USLS.Usless.$fReadSignal2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <USLS.Usless.Signal>_R))
+                   eta
+                   @ b
+                   eta1) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal10 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)
+  {- Strictness: m,
+     Unfolding: ((USLS.Usless.$fReadSignal12,
+                  USLS.Usless.$fReadSignal11
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <USLS.Usless.Signal>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <USLS.Usless.Signal>_R))))) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal11 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (USLS.Usless.Signal -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: USLS.Usless.Signal -> Text.ParserCombinators.ReadP.P b) ->
+                 eta USLS.Usless.Zero) -}
+337668ea4ddab0b1964ef217f091a79f
+  $fReadSignal12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Zero"#) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal13 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)
+  {- Strictness: m,
+     Unfolding: ((USLS.Usless.$fReadSignal15,
+                  USLS.Usless.$fReadSignal14
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <USLS.Usless.Signal>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <USLS.Usless.Signal>_R))))) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal14 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (USLS.Usless.Signal -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: USLS.Usless.Signal -> Text.ParserCombinators.ReadP.P b) ->
+                 eta USLS.Usless.Positive) -}
+f460ac9fd57ee571400b94b7eaa123f8
+  $fReadSignal15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Positive"#) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal16 ::
+    Text.ParserCombinators.ReadP.P [USLS.Usless.Signal]
+  {- Unfolding: (GHC.Read.list1
+                   @ USLS.Usless.Signal
+                   USLS.Usless.$fReadSignal2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <USLS.Usless.Signal>_R))
+                   GHC.Read.$fRead()5
+                   @ [USLS.Usless.Signal]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [USLS.Usless.Signal])) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP USLS.Usless.Signal
+  {- Arity: 1,
+     Unfolding: (GHC.Read.parens1
+                   @ USLS.Usless.Signal
+                   USLS.Usless.$fReadSignal3
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <USLS.Usless.Signal>_R))) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP USLS.Usless.Signal
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec) ->
+                 GHC.Read.choose2
+                   @ USLS.Usless.Signal
+                   USLS.Usless.$fReadSignal4
+                   eta) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal4 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)
+                   USLS.Usless.$fReadSignal13
+                   USLS.Usless.$fReadSignal5) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal5 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)
+                   USLS.Usless.$fReadSignal10
+                   USLS.Usless.$fReadSignal6) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal6 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)
+                   USLS.Usless.$fReadSignal7
+                   (GHC.Types.[]
+                      @ (GHC.Base.String,
+                         Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal))) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal7 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal)
+  {- Strictness: m,
+     Unfolding: ((USLS.Usless.$fReadSignal9,
+                  USLS.Usless.$fReadSignal8
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <USLS.Usless.Signal>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <USLS.Usless.Signal>_R))))) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal8 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (USLS.Usless.Signal -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: USLS.Usless.Signal -> Text.ParserCombinators.ReadP.P b) ->
+                 eta USLS.Usless.Negative) -}
+59c1e2bdb6507456808a0a691ec2d1b1
+  $fReadSignal9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Negative"#) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [USLS.Usless.Signal]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [USLS.Usless.Signal]
+                   USLS.Usless.$fReadSignal16) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [USLS.Usless.Signal]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                USLS.Usless.$fReadSignal1
+                  `cast`
+                (Trans
+                     (<Text.ParserCombinators.ReadPrec.Prec>_R
+                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <[USLS.Usless.Signal]>_R))
+                     (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                               <[USLS.Usless.Signal]>_R))) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal_$creadPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec USLS.Usless.Signal
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                USLS.Usless.$fReadSignal2
+                  `cast`
+                (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                          <USLS.Usless.Signal>_R)) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fReadSignal_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS USLS.Usless.Signal
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ USLS.Usless.Signal
+                   ((GHC.Read.parens1
+                       @ USLS.Usless.Signal
+                       USLS.Usless.$fReadSignal3
+                         `cast`
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <USLS.Usless.Signal>_R))
+                       eta)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <USLS.Usless.Signal>_R)
+                      @ USLS.Usless.Signal
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ USLS.Usless.Signal))) -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fShowMultiplexer :: GHC.Show.Show USLS.Usless.Multiplexer
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.Multiplexer
+                  USLS.Usless.$fShowMultiplexer_$cshowsPrec
+                  USLS.Usless.$fShowMultiplexer_$cshow
+                  USLS.Usless.$fShowMultiplexer_$cshowList -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fShowMultiplexer1 :: USLS.Usless.Multiplexer -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: USLS.Usless.Multiplexer)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { USLS.Usless.Multiplexer ww1 ww2 ->
+                 USLS.Usless.$w$cshowsPrec 0# ww1 ww2 w1 }) -}
+7c869ea74f1d9ef15a3fde81e4492f70
+  $fShowMultiplexer10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Multiplexer {"#) -}
+694b69020ee162f0101fc875adb4f7e6
+  $fShowMultiplexer2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+cc3053bd9efd6d4b88c32874d2b85a0b
+  $fShowMultiplexer3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "positiveInput = "#) -}
+5289fc242fcddb8355c2d27460c01983
+  $fShowMultiplexer4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "zeroInput = "#) -}
+b1ce1644ca80172a924f6b41db01f359
+  $fShowMultiplexer5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+46602fdbacfbbe81e7e4d72911ca000f
+  $fShowMultiplexer6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "negativeInput = "#) -}
+e06c8fcc362a0441aa6a66c996c2db47
+  $fShowMultiplexer7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "MultiplexerInput {"#) -}
+0311ceeb531535ec88f6f5de945104f0
+  $fShowMultiplexer8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "input = "#) -}
+4080baa45a75befd2a242fbaf5639797
+  $fShowMultiplexer9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "selector = "#) -}
+a7e5add60066491a06b506109692147f
+  $fShowMultiplexerInput ::
+    GHC.Show.Show USLS.Usless.MultiplexerInput
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.MultiplexerInput
+                  USLS.Usless.$fShowMultiplexerInput_$cshowsPrec
+                  USLS.Usless.$fShowMultiplexerInput_$cshow
+                  USLS.Usless.$fShowMultiplexerInput_$cshowList -}
+a7e5add60066491a06b506109692147f
+  $fShowMultiplexerInput1 ::
+    USLS.Usless.MultiplexerInput -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: USLS.Usless.MultiplexerInput)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { USLS.Usless.MultiplexerInput ww1 ww2 ww3 ->
+                 USLS.Usless.$w$cshowsPrec1 0# ww1 ww2 ww3 w1 }) -}
+a7e5add60066491a06b506109692147f
+  $fShowMultiplexerInput_$cshow ::
+    USLS.Usless.MultiplexerInput -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: USLS.Usless.MultiplexerInput) ->
+                 USLS.Usless.$fShowMultiplexerInput_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a7e5add60066491a06b506109692147f
+  $fShowMultiplexerInput_$cshowList ::
+    [USLS.Usless.MultiplexerInput] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ USLS.Usless.MultiplexerInput
+                   USLS.Usless.$fShowMultiplexerInput1) -}
+a7e5add60066491a06b506109692147f
+  $fShowMultiplexerInput_$cshowsPrec ::
+    GHC.Types.Int -> USLS.Usless.MultiplexerInput -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: USLS.Usless.MultiplexerInput)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { USLS.Usless.MultiplexerInput ww3 ww4 ww5 ->
+                 USLS.Usless.$w$cshowsPrec1 ww1 ww3 ww4 ww5 w2 } }) -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fShowMultiplexer_$cshow ::
+    USLS.Usless.Multiplexer -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(1*U,1*U,1*U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: USLS.Usless.Multiplexer) ->
+                 USLS.Usless.$fShowMultiplexer_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fShowMultiplexer_$cshowList ::
+    [USLS.Usless.Multiplexer] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ USLS.Usless.Multiplexer
+                   USLS.Usless.$fShowMultiplexer1) -}
+1b5980a9758cd04deb6762f8b161bee0
+  $fShowMultiplexer_$cshowsPrec ::
+    GHC.Types.Int -> USLS.Usless.Multiplexer -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U(1*U,1*U,1*U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: USLS.Usless.Multiplexer)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { USLS.Usless.Multiplexer ww3 ww4 ->
+                 USLS.Usless.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fShowSignal :: GHC.Show.Show USLS.Usless.Signal
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ USLS.Usless.Signal
+                  USLS.Usless.$fShowSignal_$cshowsPrec
+                  USLS.Usless.$fShowSignal_$cshow
+                  USLS.Usless.$fShowSignal_$cshowList -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fShowSignal_$cshow :: USLS.Usless.Signal -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: USLS.Usless.Signal) ->
+                 case x of wild {
+                   USLS.Usless.Positive -> USLS.Usless.$fReadSignal15
+                   USLS.Usless.Zero -> USLS.Usless.$fReadSignal12
+                   USLS.Usless.Negative -> USLS.Usless.$fReadSignal9 }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fShowSignal_$cshowList :: [USLS.Usless.Signal] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ USLS.Usless.Signal
+                   USLS.Usless.$w$cshowsPrec2) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $fShowSignal_$cshowsPrec ::
+    GHC.Types.Int -> USLS.Usless.Signal -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: USLS.Usless.Signal)
+                   (w2 :: GHC.Base.String) ->
+                 USLS.Usless.$w$cshowsPrec2 w1 w2) -}
+3b3e2563ac0144f15829f0f845871f37
+  $tc'C:Accessible :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1238620918527211705##
+                   14793729468023442165##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tc'C:Accessible1) -}
+157ef66c04c0eefea71cd9c966ed87ba
+  $tc'C:Accessible1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Accessible"#) -}
+be6c4ac384dd54da7d6e410e623821de
+  $tc'CallPack :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8422307502585190745##
+                   3096766301848364754##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tc'CallPack1) -}
+9bea46ae0765b652df67151b57cb847e
+  $tc'CallPack1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'CallPack"#) -}
+5b6fa219634bca2033db76d15c176e93
+  $tc'Multiplexer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7374811708530430514##
+                   6842311554827415735##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tc'Multiplexer1) -}
+b97cf553dfa1653ec0fa6688859e302b
+  $tc'Multiplexer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Multiplexer"#) -}
+55f2465491f185c099e813bba7066db2
+  $tc'MultiplexerInput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16468436113756783673##
+                   6301124261443046207##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tc'MultiplexerInput1) -}
+cb143bf4e365055c163ef9474e0e6952
+  $tc'MultiplexerInput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'MultiplexerInput"#) -}
+82c217f5dff33a07169e9bfcb1d887f1
+  $tc'Negative :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8365613779229611789##
+                   13083514375081345453##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tc'Negative1) -}
+e8b04783044c5955aece72fdee97a291
+  $tc'Negative1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Negative"#) -}
+88630098733e8067a204821ead49d50f
+  $tc'Positive :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15134315427204962068##
+                   5324195252657934251##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tc'Positive1) -}
+fccb4f8f10700a99bed60bedf4776f6b
+  $tc'Positive1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Positive"#) -}
+75cb67748e07f82f8cf87621ac10b111
+  $tc'Zero :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7725419911157030817##
+                   9338935996437868323##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tc'Zero1) -}
+0f13007e2afb106c2cd2f834688d22c5
+  $tc'Zero1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Zero"#) -}
+56606c15d82e6102a1f1fa4c48a3098b
+  $tcAccessible :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2251642161473178680##
+                   6169692927670789286##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tcAccessible1) -}
+0ef396afa9d922b720a1410e1feb7182
+  $tcAccessible1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Accessible"#) -}
+ba2ea1894cdc5806c1752e0255b64dd9
+  $tcCallPack :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10688878221983333015##
+                   17371262936007602940##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tcCallPack1) -}
+3ccaa0f788dc7f11db994c850d08d87a
+  $tcCallPack1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CallPack"#) -}
+1944b9da0017449fcb1d405ce86b975b
+  $tcMultiplexer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7996442892402003034##
+                   114487865616053229##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tcMultiplexer1) -}
+cfc62f117f271f64a553db8f47ca5f31
+  $tcMultiplexer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Multiplexer"#) -}
+25bf038075eaf695f264c9031a212bab
+  $tcMultiplexerInput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14199358902880568481##
+                   10296062785174638795##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tcMultiplexerInput1) -}
+f6669c239b0d31c1568d199bdd6db16b
+  $tcMultiplexerInput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "MultiplexerInput"#) -}
+501ce3af496239c0aecaf42e4532b071
+  $tcSignal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6921601240504573973##
+                   6918972965133285607##
+                   USLS.Usless.$trModule
+                   USLS.Usless.$tcSignal1) -}
+c3a4bf3a5a6ea1762133ec529f137c58
+  $tcSignal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Signal"#) -}
+50930622f4c5d9c890e85a3bfbeeb971
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   USLS.Usless.$trModule2
+                   USLS.Usless.$trModule1) -}
+bb4ecb08436b2c5b523f7768d7d04ff0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "USLS.Usless"#) -}
+246e0d05a978c359230f357a55172612
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "usless-0.1.0.0-Lqc2BaLkUqq9LG61fMYzNm"#) -}
+f330454bda98d80a2964f99e77f61c1a
+  $w$c== ::
+    USLS.Usless.Signal
+    -> USLS.Usless.MultiplexerInput
+    -> USLS.Usless.Signal
+    -> USLS.Usless.MultiplexerInput
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(1*U,1*U,1*U)><S,1*U><L,1*U(1*U,1*U,1*U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: USLS.Usless.Signal)
+                   (ww1 :: USLS.Usless.MultiplexerInput)
+                   (ww2 :: USLS.Usless.Signal)
+                   (ww3 :: USLS.Usless.MultiplexerInput) ->
+                 case ww of wild {
+                   USLS.Usless.Positive
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        USLS.Usless.Positive -> USLS.Usless.$fEqMultiplexer_$c==1 ww1 ww3 }
+                   USLS.Usless.Zero
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        USLS.Usless.Zero -> USLS.Usless.$fEqMultiplexer_$c==1 ww1 ww3 }
+                   USLS.Usless.Negative
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        USLS.Usless.Negative
+                        -> USLS.Usless.$fEqMultiplexer_$c==1 ww1 ww3 } }) -}
+2b18905e893d037a415aa7d4c8d7e58b
+  $w$c==1 ::
+    USLS.Usless.Signal
+    -> USLS.Usless.Signal
+    -> USLS.Usless.Signal
+    -> USLS.Usless.Signal
+    -> USLS.Usless.Signal
+    -> USLS.Usless.Signal
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><L,1*U><S,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: USLS.Usless.Signal)
+                   (ww1 :: USLS.Usless.Signal)
+                   (ww2 :: USLS.Usless.Signal)
+                   (ww3 :: USLS.Usless.Signal)
+                   (ww4 :: USLS.Usless.Signal)
+                   (ww5 :: USLS.Usless.Signal) ->
+                 let {
+                   $j :: GHC.Prim.Void# -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <L,A> -}
+                   = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                     case ww1 of wild {
+                       USLS.Usless.Positive
+                       -> case ww4 of wild1 {
+                            DEFAULT -> GHC.Types.False
+                            USLS.Usless.Positive -> USLS.Usless.$fEqMultiplexer_$c==2 ww2 ww5 }
+                       USLS.Usless.Zero
+                       -> case ww4 of wild1 {
+                            DEFAULT -> GHC.Types.False
+                            USLS.Usless.Zero -> USLS.Usless.$fEqMultiplexer_$c==2 ww2 ww5 }
+                       USLS.Usless.Negative
+                       -> case ww4 of wild1 {
+                            DEFAULT -> GHC.Types.False
+                            USLS.Usless.Negative
+                            -> USLS.Usless.$fEqMultiplexer_$c==2 ww2 ww5 } }
+                 } in
+                 case ww of wild {
+                   USLS.Usless.Positive
+                   -> case ww3 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        USLS.Usless.Positive -> $j GHC.Prim.void# }
+                   USLS.Usless.Zero
+                   -> case ww3 of wild1 {
+                        DEFAULT -> GHC.Types.False USLS.Usless.Zero -> $j GHC.Prim.void# }
+                   USLS.Usless.Negative
+                   -> case ww3 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        USLS.Usless.Negative -> $j GHC.Prim.void# } }) -}
+c4c47c647e0d41441ee7ea89be2f28e2
+  $w$cevaluate ::
+    USLS.Usless.MRAM
+    -> GHC.Prim.Int# -> USLS.Usless.Signal -> USLS.Usless.Signal
+  {- Arity: 3, Strictness: <S,1*U><S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: USLS.Usless.MRAM)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: USLS.Usless.Signal) ->
+                 case ww1 of wild {
+                   USLS.Usless.Positive
+                   -> case GHC.List.$w!!
+                             @ USLS.Usless.MultiplexerInput
+                             w
+                             ww of wild1 { USLS.Usless.MultiplexerInput ds ds1 ds2 ->
+                      ds2 }
+                   USLS.Usless.Zero
+                   -> case GHC.List.$w!!
+                             @ USLS.Usless.MultiplexerInput
+                             w
+                             ww of wild1 { USLS.Usless.MultiplexerInput ds ds1 ds2 ->
+                      ds1 }
+                   USLS.Usless.Negative
+                   -> case GHC.List.$w!!
+                             @ USLS.Usless.MultiplexerInput
+                             w
+                             ww of wild1 { USLS.Usless.MultiplexerInput ds ds1 ds2 ->
+                      ds } }) -}
+5c039f2e32ef28bf6e340c2240125088
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> USLS.Usless.Signal
+    -> USLS.Usless.MultiplexerInput
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U(1*U,1*U,1*U)><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: USLS.Usless.Signal)
+                   (ww2 :: USLS.Usless.MultiplexerInput)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       USLS.Usless.$fShowMultiplexer10
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          USLS.Usless.$fShowMultiplexer9
+                          (let {
+                             eta :: GHC.Base.String
+                             = GHC.Base.++
+                                 @ GHC.Types.Char
+                                 USLS.Usless.$fShowMultiplexer5
+                                 (GHC.Base.++
+                                    @ GHC.Types.Char
+                                    USLS.Usless.$fShowMultiplexer8
+                                    (case ww2 of ww3 { USLS.Usless.MultiplexerInput ww4 ww5 ww6 ->
+                                     USLS.Usless.$w$cshowsPrec1
+                                       0#
+                                       ww4
+                                       ww5
+                                       ww6
+                                       (GHC.Base.++
+                                          @ GHC.Types.Char
+                                          USLS.Usless.$fShowMultiplexer2
+                                          x) }))
+                           } in
+                           case ww1 of wild {
+                             USLS.Usless.Positive
+                             -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal15 eta
+                             USLS.Usless.Zero
+                             -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal12 eta
+                             USLS.Usless.Negative
+                             -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal9 eta }))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p w
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w)) }) -}
+66b880b24068bce485012747c9348a50
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> USLS.Usless.Signal
+    -> USLS.Usless.Signal
+    -> USLS.Usless.Signal
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5, Strictness: <S,U><L,1*U><L,1*U><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: USLS.Usless.Signal)
+                   (ww2 :: USLS.Usless.Signal)
+                   (ww3 :: USLS.Usless.Signal)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       USLS.Usless.$fShowMultiplexer7
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          USLS.Usless.$fShowMultiplexer6
+                          (let {
+                             eta :: GHC.Base.String
+                             = GHC.Base.++
+                                 @ GHC.Types.Char
+                                 USLS.Usless.$fShowMultiplexer5
+                                 (GHC.Base.++
+                                    @ GHC.Types.Char
+                                    USLS.Usless.$fShowMultiplexer4
+                                    (let {
+                                       eta1 :: GHC.Base.String
+                                       = GHC.Base.++
+                                           @ GHC.Types.Char
+                                           USLS.Usless.$fShowMultiplexer5
+                                           (GHC.Base.++
+                                              @ GHC.Types.Char
+                                              USLS.Usless.$fShowMultiplexer3
+                                              (case ww3 of wild {
+                                                 USLS.Usless.Positive
+                                                 -> GHC.Base.++
+                                                      @ GHC.Types.Char
+                                                      USLS.Usless.$fReadSignal15
+                                                      (GHC.Base.++
+                                                         @ GHC.Types.Char
+                                                         USLS.Usless.$fShowMultiplexer2
+                                                         x)
+                                                 USLS.Usless.Zero
+                                                 -> GHC.Base.++
+                                                      @ GHC.Types.Char
+                                                      USLS.Usless.$fReadSignal12
+                                                      (GHC.Base.++
+                                                         @ GHC.Types.Char
+                                                         USLS.Usless.$fShowMultiplexer2
+                                                         x)
+                                                 USLS.Usless.Negative
+                                                 -> GHC.Base.++
+                                                      @ GHC.Types.Char
+                                                      USLS.Usless.$fReadSignal9
+                                                      (GHC.Base.++
+                                                         @ GHC.Types.Char
+                                                         USLS.Usless.$fShowMultiplexer2
+                                                         x) }))
+                                     } in
+                                     case ww2 of wild {
+                                       USLS.Usless.Positive
+                                       -> GHC.Base.++
+                                            @ GHC.Types.Char
+                                            USLS.Usless.$fReadSignal15
+                                            eta1
+                                       USLS.Usless.Zero
+                                       -> GHC.Base.++
+                                            @ GHC.Types.Char
+                                            USLS.Usless.$fReadSignal12
+                                            eta1
+                                       USLS.Usless.Negative
+                                       -> GHC.Base.++
+                                            @ GHC.Types.Char
+                                            USLS.Usless.$fReadSignal9
+                                            eta1 }))
+                           } in
+                           case ww1 of wild {
+                             USLS.Usless.Positive
+                             -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal15 eta
+                             USLS.Usless.Zero
+                             -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal12 eta
+                             USLS.Usless.Negative
+                             -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal9 eta }))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p w
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w)) }) -}
+dc9f1b76e22bf10131d08d969ae66af3
+  $w$cshowsPrec2 ::
+    USLS.Usless.Signal -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: USLS.Usless.Signal) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   USLS.Usless.Positive
+                   -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal15 w1
+                   USLS.Usless.Zero
+                   -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal12 w1
+                   USLS.Usless.Negative
+                   -> GHC.Base.++ @ GHC.Types.Char USLS.Usless.$fReadSignal9 w1 }) -}
+f73450bf6e27bdb4fea1d19d224167f3
+  class Accessible t where
+    evaluate :: t -> USLS.Usless.CallPack -> USLS.Usless.Signal
+    {-# MINIMAL evaluate #-}
+1dde65c657e9c684ef3ae1fe5951f87e
+  data CallPack
+    = CallPack {address :: GHC.Types.Int,
+                dataPinInput :: USLS.Usless.Signal}
+d7204a6b7f62b1ba2fad52531a1b39ca
+  type MRAM = [USLS.Usless.MultiplexerInput]
+1b5980a9758cd04deb6762f8b161bee0
+  data Multiplexer
+    = Multiplexer {selector :: USLS.Usless.Signal,
+                   input :: USLS.Usless.MultiplexerInput}
+a7e5add60066491a06b506109692147f
+  data MultiplexerInput
+    = MultiplexerInput {negativeInput :: USLS.Usless.Signal,
+                        zeroInput :: USLS.Usless.Signal,
+                        positiveInput :: USLS.Usless.Signal}
+dc9f1b76e22bf10131d08d969ae66af3
+  data Signal = Positive | Zero | Negative
+ba4c8296aa471a185fec96bde4e8d35e
+  address :: USLS.Usless.CallPack -> GHC.Types.Int
+  RecSel Left USLS.Usless.CallPack
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: USLS.Usless.CallPack) ->
+                 case ds of wild { USLS.Usless.CallPack ds1 ds2 -> ds1 }) -}
+1a9919ed294b912dc37253ca49d632c3
+  dataPinInput :: USLS.Usless.CallPack -> USLS.Usless.Signal
+  RecSel Left USLS.Usless.CallPack
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: USLS.Usless.CallPack) ->
+                 case ds of wild { USLS.Usless.CallPack ds1 ds2 -> ds2 }) -}
+bb01b11f486c8117f6655bf911e57ec6
+  input :: USLS.Usless.Multiplexer -> USLS.Usless.MultiplexerInput
+  RecSel Left USLS.Usless.Multiplexer
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { USLS.Usless.Multiplexer ds1 ds2 -> ds2 }) -}
+88a89cc03f63b03197f8f47d9656ded2
+  negativeInput :: USLS.Usless.MultiplexerInput -> USLS.Usless.Signal
+  RecSel Left USLS.Usless.MultiplexerInput
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: USLS.Usless.MultiplexerInput) ->
+                 case ds of wild { USLS.Usless.MultiplexerInput ds1 ds2 ds3 ->
+                 ds1 }) -}
+81883f1d8f8e3526679a7920d6a85c4a
+  nullMultiplexer :: USLS.Usless.Multiplexer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (USLS.Usless.Multiplexer
+                   USLS.Usless.Zero
+                   USLS.Usless.nullMultiplexer1) -}
+56c22b7b59c69b12e2dd3b28c321f7d0
+  nullMultiplexer1 :: USLS.Usless.MultiplexerInput
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (USLS.Usless.MultiplexerInput
+                   USLS.Usless.Zero
+                   USLS.Usless.Zero
+                   USLS.Usless.Zero) -}
+c17262a292cd4c07208fd862d3d8385b
+  positiveInput :: USLS.Usless.MultiplexerInput -> USLS.Usless.Signal
+  RecSel Left USLS.Usless.MultiplexerInput
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: USLS.Usless.MultiplexerInput) ->
+                 case ds of wild { USLS.Usless.MultiplexerInput ds1 ds2 ds3 ->
+                 ds3 }) -}
+df6ccd1fbf91d918fe5d4a8694de8191
+  selector :: USLS.Usless.Multiplexer -> USLS.Usless.Signal
+  RecSel Left USLS.Usless.Multiplexer
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: USLS.Usless.Multiplexer) ->
+                 case ds of wild { USLS.Usless.Multiplexer ds1 ds2 -> ds1 }) -}
+0e0c9e037fcf3dae6ab6392fd5c79bec
+  zeroInput :: USLS.Usless.MultiplexerInput -> USLS.Usless.Signal
+  RecSel Left USLS.Usless.MultiplexerInput
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: USLS.Usless.MultiplexerInput) ->
+                 case ds of wild { USLS.Usless.MultiplexerInput ds1 ds2 ds3 ->
+                 ds2 }) -}
+instance [safe] USLS.Usless.Accessible [USLS.Usless.Multiplexer]
+  = USLS.Usless.$fAccessibleMultiplexer
+instance [safe] USLS.Usless.Accessible [[]]
+  = USLS.Usless.$fAccessible[]
+instance [safe] GHC.Classes.Eq [USLS.Usless.Multiplexer]
+  = USLS.Usless.$fEqMultiplexer
+instance [safe] GHC.Classes.Eq [USLS.Usless.MultiplexerInput]
+  = USLS.Usless.$fEqMultiplexerInput
+instance [safe] GHC.Classes.Eq [USLS.Usless.Signal]
+  = USLS.Usless.$fEqSignal
+instance [safe] GHC.Classes.Ord [USLS.Usless.Signal]
+  = USLS.Usless.$fOrdSignal
+instance [safe] GHC.Read.Read [USLS.Usless.Signal]
+  = USLS.Usless.$fReadSignal
+instance [safe] GHC.Show.Show [USLS.Usless.Multiplexer]
+  = USLS.Usless.$fShowMultiplexer
+instance [safe] GHC.Show.Show [USLS.Usless.MultiplexerInput]
+  = USLS.Usless.$fShowMultiplexerInput
+instance [safe] GHC.Show.Show [USLS.Usless.Signal]
+  = USLS.Usless.$fShowSignal
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
